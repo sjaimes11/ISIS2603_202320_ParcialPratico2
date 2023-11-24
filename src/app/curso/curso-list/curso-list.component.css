@@ -1,0 +1,11 @@
+img {
+  height: 350px;
+  width: auto;
+  max-width: 400px;
+ }
+
+ .btn-primary {
+  border-color: #F16194 !important;
+  background-color: #F16194 !important;
+  }
+

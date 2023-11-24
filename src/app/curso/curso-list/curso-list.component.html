@@ -1,0 +1,41 @@
+<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 rounded p-4 my-1">
+  <h2>Cursos en linea</h2>
+  <table class="table table-striped table-dark">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Plataforma</th>
+        <th scope="col">Lanzamiento</th>
+        <th scope="col">Duracion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let s of cursos">
+        <th scope="row">
+          <dd>{{ s.id }}</dd>
+        </th>
+        <td>
+          <dd> <a href="{{s.title}}">{{ s.title }}</a></dd>
+        </td>
+        <td>
+          <dd>{{ s.platform }}</dd>
+        </td>
+        <td>
+          <dd>{{ s.launch_year }}</dd>
+        </td>
+        <td>
+          <dd>{{ s.duration_hours }}</dd>
+        </td>
+      </tr>
+
+    </tbody>
+
+  </table>
+  <table class="table p-1 my-1">
+      <tr><td><dd>   {{message}}</dd></td></tr>
+
+  </table>
+</div>
+
+
