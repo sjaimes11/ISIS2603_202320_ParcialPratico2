@@ -1,3 +1,10 @@
-<p>
-  curso-detail works!
-</p>
+<div class="container-fluid">
+
+  <div class="card mb-3">
+    <img src="{{cursoDetail.image}}" class="card-img-top my-3" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{cursoDetail.title}}</h5>
+      <p class="card-text">{{cursoDetail.description}}</p>
+      <h3 class="card-text">{{OfertaCurso(cursoDetail.offers_certificate)}} ofrece certificado</h3>
+    </div>
+  </div>

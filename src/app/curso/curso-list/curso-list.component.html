@@ -1,3 +1,4 @@
+<div class="row">
 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 rounded p-4 my-1">
   <h2>Cursos en linea</h2>
   <table class="table table-striped table-dark">
@@ -16,7 +17,7 @@
           <dd>{{ s.id }}</dd>
         </th>
         <td>
-          <dd> <a href="{{s.title}}">{{ s.title }}</a></dd>
+          <dd> <a (click)="onSelected(s)">{{ s.title }}</a></dd>
         </td>
         <td>
           <dd>{{ s.platform }}</dd>
@@ -36,6 +37,11 @@
       <tr><td><dd>   {{message}}</dd></td></tr>
 
   </table>
+</div>
+<div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 rounded p-4 my-5" *ngIf="selected">
+  <app-curso-detail [cursoDetail]="selectedCurso"></app-curso-detail>          
+</div>
+
 </div>
 
 
